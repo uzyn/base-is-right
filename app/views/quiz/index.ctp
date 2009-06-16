@@ -5,7 +5,7 @@
 	Enter a term:
 </h2>
 	<?php 
-	echo $form->create('Quiz', array('url' => $this->here)); 
+	echo $form->create('Quiz', array('url' => '/quiz/search', 'id' => 'searchForm')); 
 	echo $form->input('Quiz.search', array('label' => '', 'div' => ''));
 	echo $form->submit("I'm feeling basey"); ?>
 </div>
