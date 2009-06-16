@@ -17,10 +17,23 @@ $(document).ready(function(){
 
 function searchComplete(responseText, statusText){
     hideLoading();
-    $("#quiz").slideDown();
     
     var product = eval('(' + responseText + ')');
-    console.log(product);
+    if (product.Product == undefined){
+        $("#noproduct").show();
+        $("#quiz").hide();
+    }
+    else{
+        $("#title").html(product.Product.name);
+        $("#description").html(product.Product.description);
+        $("#image").html('<img src="' + product.Product.image + '" />');
+        price = parseInt(Math.round(product.Product.price));
+    
+        $("#noproduct").hide();
+        $("#quiz").slideDown(function(){
+            $('#ProductPrice').focus();
+        });        
+    }
 }
 
 function showLoading(){
@@ -53,5 +66,7 @@ function guess(x){
     
     if (x > price){
         $("#toohigh").show();
-    }   
+    }
+    
+    $('#ProductPrice').focus();
 }

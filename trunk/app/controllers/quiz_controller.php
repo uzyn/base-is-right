@@ -7,7 +7,7 @@ class QuizController extends AppController {
 	}
 
 	function search() {
-		Configure::write('debug', '1');
+		Configure::write('debug', '0');
 		$this->layout = null;
 		$this->autoRender = false;
 		if (empty($this->data)) {

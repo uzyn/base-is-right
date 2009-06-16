@@ -40,9 +40,11 @@
 		<div id="right" class="result" style="display: none;">All the base are belong to you</div>
 		<div id="toolow" class="result" style="display: none;">No way it is that cheap!</div>
 		<div id="toohigh" class="result" style="display: none;">I could've got it much cheaply.</div>	
-		<div id="error" class="result" style="display: none;">Sorry, we don't speak your langauge.</div>			
+		<div id="error" class="result" style="display: none;">Sorry, we don't speak your langauge.</div>
 	</div>
 </div>
+
+<div id="noproduct" class="result" style="display: none;">Google Base doesn't like your search term. Please try another.</div>		
 
 <div id="loading" style="display: none;">
 	Loading...

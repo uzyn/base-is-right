@@ -27,6 +27,7 @@ h1 { margin: 30px 0; }
 #results #right { color: green; }
 #results #toohigh { color: red; }
 #results #toolow, #results #error { color: red; }
+#noproduct { color: red; text-align: center; }
 
 #guess { width: 300px; margin: 0 auto; text-align: left; }
 #guess h3 { display: block; }
