@@ -31,6 +31,7 @@ function searchComplete(responseText, statusText){
     
         $("#noproduct").hide();
         $("#quiz").slideDown(function(){
+            $('#ProductPrice').val("");
             $('#ProductPrice').focus();
         });        
     }
