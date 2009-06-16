@@ -52,7 +52,7 @@ function stripComment(msg){
 
 function guess(x){
     $(".result").hide();
-    x = parseInt(x);
+    x = parseInt(Math.round(x));
     if (isNaN(x)){
         $("#error").show();
     }
