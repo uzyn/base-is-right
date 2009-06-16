@@ -1,18 +1,20 @@
 <?php
 class QuizController extends AppController {
-	var $uses = array();
-	
-	function index(){
-		
+	var $uses = array('Product');
+
+	function index() {
+
 	}
-	
-	function search(){
+
+	function search() {
 		$this->layout = null;
 		$this->autoRender = false;
-		
-		debug($this->data);
-		//$this->data['Quiz']['search']
-		//success: echo json
+		if (empty($this->data)) {
+			echo json_decode(array());
+		} else {
+			$result = $this->Product->fetch_data($this->data['Quiz']['search']);
+			echo json_decode($result);
+		}
 		
 		exit();
 	}
