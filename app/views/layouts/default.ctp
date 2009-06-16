@@ -6,6 +6,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
 	<title>The Base is Right</title>
 	<link href="/css/styles.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="http://www.google.com/jsapi"></script>
+	<script>
+	  // Load jQuery
+	  google.load("jquery", "1");
+	</script>
+	<script src="/js/quiz.js"></script>	
 </head>
 
 <body>
