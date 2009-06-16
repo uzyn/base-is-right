@@ -32,12 +32,15 @@
 		echo $form->submit("Submit"); 
 		echo $form->end();
 		?>
+		
+		<div id="exp">*Just guess to the nearest dollar</div>
 	</div>
 
 	<div id="results">
 		<div id="right" class="result" style="display: none;">All the base are belong to you</div>
 		<div id="toolow" class="result" style="display: none;">No way it is that cheap!</div>
 		<div id="toohigh" class="result" style="display: none;">I could've got it much cheaply.</div>	
+		<div id="error" class="result" style="display: none;">Sorry, we don't speak your langauge.</div>			
 	</div>
 </div>
 
