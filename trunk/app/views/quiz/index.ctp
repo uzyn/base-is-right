@@ -7,7 +7,9 @@
 	<?php 
 	echo $form->create('Quiz', array('url' => '/quiz/search', 'id' => 'searchForm')); 
 	echo $form->input('Quiz.search', array('label' => '', 'div' => ''));
-	echo $form->submit("I'm feeling basey"); ?>
+	echo $form->submit("I'm feeling basey"); 
+	echo $form->end();
+	?>
 </div>
 
 <div id="quiz" style="display: none;">
@@ -27,7 +29,9 @@
 		<?php 
 		echo $form->create('Product', array('url' => $this->here)); 
 		echo $form->input('Product.price', array('label' => 'USD', 'div' => ''));
-		echo $form->submit("Submit"); ?>
+		echo $form->submit("Submit"); 
+		echo $form->end();
+		?>
 	</div>
 
 	<div id="results">
