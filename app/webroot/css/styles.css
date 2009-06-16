@@ -30,3 +30,5 @@ h1 { margin: 30px 0; }
 
 #guess { width: 300px; margin: 0 auto; text-align: left; }
 #guess h3 { display: block; }
+
+#loading { text-align: center; margin: 2em 0; color: #999; }
