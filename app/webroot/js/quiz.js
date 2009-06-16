@@ -1,7 +1,20 @@
 $(document).ready(function(){
     $("#QuizSearch").focus();
     
-    $('#searchForm').ajaxForm(function() { 
-        alert("Thank you for your comment!"); 
+    $('#searchForm').ajaxForm({ 
+		beforeSubmit: showLoading,
+		success: searchComplete
     });    
 });
+
+function searchComplete(){
+    hideLoading();
+}
+
+function showLoading(){
+    $('#loading').show();
+}
+
+function hideLoading(){
+    $('#loading').hide();
+}

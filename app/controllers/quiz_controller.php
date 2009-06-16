@@ -6,8 +6,13 @@ class QuizController extends AppController {
 		
 	}
 	
-	function search($term){
+	function search(){
+		$this->layout = null;
+		$this->autoRender = false;
 		
+		debug($this->data);
+		
+		exit();
 	}
 }
 ?>
