@@ -1,11 +1,14 @@
 <h1>The Base is Right</h1>
+
+<div id="search">
 <h2>
-	Enter a search term:
+	Enter a term:
+</h2>
 	<?php 
 	echo $form->create('Quiz', array('url' => $this->here)); 
 	echo $form->input('Quiz.search', array('label' => '', 'div' => ''));
 	echo $form->submit("I'm feeling basey"); ?>
-</h2>
+</div>
 
 <div id="product">
 	<div id="image">
