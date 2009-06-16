@@ -7,16 +7,15 @@ class QuizController extends AppController {
 	}
 
 	function search() {
+		Configure::write('debug', '1');
 		$this->layout = null;
 		$this->autoRender = false;
 		if (empty($this->data)) {
-			echo json_decode(array());
+			echo json_encode(array());
 		} else {
 			$result = $this->Product->fetch_data($this->data['Quiz']['search']);
-			echo json_decode($result);
+			echo json_encode($result);
 		}
-		
-		exit();
 	}
 	
 	function guess(){
