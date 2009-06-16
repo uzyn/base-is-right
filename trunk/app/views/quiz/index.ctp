@@ -37,6 +37,9 @@
 	</div>
 </div>
 
+<div id="loading" style="display: none;">
+	Loading...
+</div>
 <div id="footer">
 	<a href="http://code.google.com/p/base-is-right/">Project Home</a>
 </div>
