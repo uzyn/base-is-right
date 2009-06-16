@@ -5,10 +5,15 @@ $(document).ready(function(){
 		beforeSubmit: showLoading,
 		success: searchComplete
     });    
+    
+    $('#guessForm').submit(function(){
+    });    
 });
 
-function searchComplete(){
+function searchComplete(responseText, statusText){
     hideLoading();
+    $("#quiz").slideDown();
+    
 }
 
 function showLoading(){
@@ -17,4 +22,9 @@ function showLoading(){
 
 function hideLoading(){
     $('#loading').hide();
+}
+
+function stripComment(msg){
+    msg = msg.replace(/<!--.*-->/, "");
+    return msg;
 }
