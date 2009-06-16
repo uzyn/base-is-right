@@ -27,7 +27,7 @@
 	<div id="guess">
 		<h3 id="howmuch">How much?</h3>
 		<?php 
-		echo $form->create('Product', array('url' => $this->here)); 
+		echo $form->create('Product', array('url' => '/quiz/guess', 'id' => 'guessForm')); 
 		echo $form->input('Product.price', array('label' => 'USD', 'div' => ''));
 		echo $form->submit("Submit"); 
 		echo $form->end();
