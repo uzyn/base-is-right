@@ -11,6 +11,7 @@
 	  // Load jQuery
 	  google.load("jquery", "1");
 	</script>
+	<script src="/js/jquery.form.js"></script>
 	<script src="/js/quiz.js"></script>	
 </head>
 

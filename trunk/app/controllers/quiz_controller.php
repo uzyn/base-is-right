@@ -5,5 +5,9 @@ class QuizController extends AppController {
 	function index(){
 		
 	}
+	
+	function search($term){
+		
+	}
 }
 ?>
