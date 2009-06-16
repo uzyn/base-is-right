@@ -50,7 +50,7 @@ class Product extends AppModel {
 		$i = 0;
 
 		while($i>-1) {
-			if(isset($itemReportXML->entry[$i]->g_price) && isset($itemReportXML->entry[$i]->g_image_link)) {
+			if(isset($itemReportXML->entry[$i]->g_price) && isset($itemReportXML->entry[$i]->g_image_link) && !empty($itemReportXML->entry[$i]->g_id)) {
 			//isolate name
 				$itemName = (string) $itemReportXML->entry[$i]->title;
 				// description
