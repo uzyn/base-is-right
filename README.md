@@ -6,12 +6,12 @@ Built with the following technologies/API:
 
 - PHP
 - MySQL
-- CakePHP
-- jQuery
+- [CakePHP](http://cakephp.org/)
+- [jQuery](http://jquery.com/)
 - And, especially, with the following Google technologies:
-  - Google Base API
-  - Google AJAX Libraries API
+  - [Google Base API](http://code.google.com/apis/base/)
+  - [Google AJAX Libraries API](http://code.google.com/apis/ajaxlibs/)
   
 in 3 hours.
 
-Automatically exported from code.google.com/p/base-is-right
+Automatically exported from http://code.google.com/p/base-is-right
